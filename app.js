@@ -1,14 +1,12 @@
 //current version to import express
 import express from 'express'
+import userRoutes from './routes/userRoute.js'
 
 //create app
 const app = express()
 
-//Routing
-app.get('/', function(request, response) {
-    response.send('Hola mundo en express')
-});
-
+//Routing 
+app.get('/', userRoutes)
 
 //Define Port and start project
 const port = 3000;
