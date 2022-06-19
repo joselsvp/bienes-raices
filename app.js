@@ -1,5 +1,5 @@
-//last vension to import express
-const express = require('express')
+//current version to import express
+import express from 'express'
 
 //create app
 const app = express()
