@@ -3,8 +3,8 @@ import express from 'express'
 const router = express.Router();
 
 //use search all paths starting with /
-router.get('/', function(request, response) {
-    response.json({msg: 'response type get'})
+router.get('/login', function(request, response) {
+    response.render('auth/login')
 });
 
 
