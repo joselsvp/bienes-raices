@@ -5,6 +5,10 @@ import userRoutes from './routes/userRoute.js'
 //create app
 const app = express()
 
+//enable pug
+app.set('view engine', 'pug')
+app.set('views', './views')
+
 //Routing 
 app.get('/', userRoutes)
 
