@@ -1,9 +1,13 @@
 const formLogin = (request, response) => {
     response.render('auth/login', {
-        autenticado: true
     })
 }
 
+const formRegister = (request, response) => {
+    response.render('auth/register', {
+    })
+}
 export {
-    formLogin
+    formLogin,
+    formRegister
 }
